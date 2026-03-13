@@ -5,6 +5,7 @@ Architecture: iphoneos-arm
 Description: meow
 Depiction: https://dkxuanye.github.io/repo/depictions/lol.sep.turdusmerula-1.1.html
 SileoDepiction: https://dkxuanye.github.io/repo/depictions/lol.sep.turdusmerula-1.1.json
+Icon: https://dkxuanye.github.io/repo/assets/turdus-icon.png
 Maintainer: kok3shi
 Author: Clarity, kok3shidoll, Mineek
 Section: Development
@@ -20,6 +21,7 @@ Architecture: iphoneos-arm64
 Description: meow
 Depiction: https://dkxuanye.github.io/repo/depictions/lol.sep.turdusmerula-1.1.html
 SileoDepiction: https://dkxuanye.github.io/repo/depictions/lol.sep.turdusmerula-1.1.json
+Icon: https://dkxuanye.github.io/repo/assets/turdus-icon.png
 Maintainer: kok3shi
 Author: Clarity, kok3shidoll, Mineek
 Section: Development

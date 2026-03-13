@@ -24,7 +24,8 @@
         {
           "class": "DepictionHeaderView",
           "title": "turdus merula",
-          "subtitle": "dkxuanye · 1.1"
+          "subtitle": "dkxuanye · 1.1",
+          "icon": "https://dkxuanye.github.io/repo/assets/turdus-icon.png"
         },
         {
           "class": "DepictionSubheaderView",
