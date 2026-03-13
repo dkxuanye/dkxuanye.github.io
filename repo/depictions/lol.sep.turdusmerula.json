@@ -3,8 +3,8 @@
   "name": "turdus merula",
   "version": "1.1",
   "author": "dkxuanye",
-  "subtitle": "USB and development utility",
-  "description": "meow",
+  "subtitle": "面向 A9 / A10 设备的自由降级工具",
+  "description": "Turdus Merula 是一个面向 A9 / A10 设备的自由降级工具，用于在支持环境下完成固件降级、刷写与相关操作。",
   "depiction": "https://dkxuanye.github.io/repo/depictions/lol.sep.turdusmerula.json",
   "changelog": [
     "Initial repository bootstrap release."
@@ -12,5 +12,12 @@
   "screenshots": [],
   "supportUrl": "https://github.com/dkxuanye",
   "sourceUrl": "https://github.com/dkxuanye",
-  "architecture": "iphoneos-arm64"
+  "architecture": "iphoneos-arm64",
+  "audience": "适合已经了解越狱、固件和设备操作流程，并希望在特定条件下进行降级管理的用户。",
+  "riskNotice": "降级与刷写操作具有一定门槛和风险，请在确认设备型号、系统环境与操作条件后再使用。",
+  "tags": [
+    "A9",
+    "A10",
+    "自由降级"
+  ]
 }
