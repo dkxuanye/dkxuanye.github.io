@@ -5,7 +5,7 @@ Version: 1.0
 Architectures: iphoneos-arm iphoneos-arm64
 Components: main
 Description: Personal jailbreak repository for dkxuanye
-Date: Fri, 13 Mar 2026 13:32:02 GMT
+Date: Fri, 13 Mar 2026 13:46:10 GMT
 SHA256:
- bd4f6c114f261a1bd74d62938ff5315c5ed6320cd46edbe46bedec83021ed83c 952 Packages
- 5b3c326333f59c2ecfa0e0af16a9dcd48f5ec13885bdfd040fad1c097c098abd 414 Packages.gz
+ 0b115840cad551444613f621cb5d8adea4b57eb3bd30ceacfb65f774ba5ddef3 1122 Packages
+ c83f42fcf2b5a388e778d2118651950b4a9c2a27809566dde632b959bbd331bc 429 Packages.gz
