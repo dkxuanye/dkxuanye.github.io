@@ -44,6 +44,10 @@
         },
         {
           "class": "DepictionMarkdownView",
+          "markdown": "**兼容说明**\n\n**支持范围**\n\n支持范围聚焦 A9 / A10 芯片设备。\n\n**使用条件**\n\n实际可用性仍取决于设备环境、系统状态与具体操作条件。"
+        },
+        {
+          "class": "DepictionMarkdownView",
           "markdown": "**标签**\n\nA9 · A10 · 自由降级"
         }
       ]
