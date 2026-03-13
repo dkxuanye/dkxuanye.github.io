@@ -11,6 +11,17 @@
       "tabname": "Overview",
       "views": [
         {
+          "class": "DepictionScreenshotsView",
+          "itemCornerRadius": 12,
+          "itemSize": "{160,346}",
+          "screenshots": [
+            {
+              "url": "https://dkxuanye.github.io/repo/assets/turdus-merula-main.jpg",
+              "accessibilityText": "Turdus Merula 终端主界面截图"
+            }
+          ]
+        },
+        {
           "class": "DepictionHeaderView",
           "title": "turdus merula",
           "subtitle": "dkxuanye · 1.1"
