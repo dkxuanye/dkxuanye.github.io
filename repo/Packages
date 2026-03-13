@@ -3,8 +3,8 @@ Name: turdus merula
 Version: 1.1
 Architecture: iphoneos-arm
 Description: meow
-Depiction: https://dkxuanye.github.io/repo/depictions/lol.sep.turdusmerula.html
-SileoDepiction: https://dkxuanye.github.io/repo/depictions/lol.sep.turdusmerula.json
+Depiction: https://dkxuanye.github.io/repo/depictions/lol.sep.turdusmerula-1.1.html
+SileoDepiction: https://dkxuanye.github.io/repo/depictions/lol.sep.turdusmerula-1.1.json
 Maintainer: kok3shi
 Author: Clarity, kok3shidoll, Mineek
 Section: Development
@@ -18,8 +18,8 @@ Name: turdus merula
 Version: 1.1
 Architecture: iphoneos-arm64
 Description: meow
-Depiction: https://dkxuanye.github.io/repo/depictions/lol.sep.turdusmerula.html
-SileoDepiction: https://dkxuanye.github.io/repo/depictions/lol.sep.turdusmerula.json
+Depiction: https://dkxuanye.github.io/repo/depictions/lol.sep.turdusmerula-1.1.html
+SileoDepiction: https://dkxuanye.github.io/repo/depictions/lol.sep.turdusmerula-1.1.json
 Maintainer: kok3shi
 Author: Clarity, kok3shidoll, Mineek
 Section: Development
