@@ -1,0 +1,28 @@
+Package: lol.sep.turdusmerula
+Name: turdus merula
+Version: 1.1
+Architecture: iphoneos-arm
+Description: meow
+Depiction: https://dkxuanye.github.io/repo/depictions/lol.sep.turdusmerula.json
+Maintainer: kok3shi
+Author: Clarity, kok3shidoll, Mineek
+Section: Development
+Depends: firmware (>= 14.0), cy+cpu.arm64, libcurl4, libssl3, usbmuxd
+Filename: debs/turdusmerula_v1.1_iphoneos-arm.deb
+Size: 1669124
+SHA256: 4d4bcc44010b3f25146bc71cba24cb05acd47b1a40e8a44a1c9dab3eb77f453a
+
+Package: lol.sep.turdusmerula
+Name: turdus merula
+Version: 1.1
+Architecture: iphoneos-arm64
+Description: meow
+Depiction: https://dkxuanye.github.io/repo/depictions/lol.sep.turdusmerula.json
+Maintainer: kok3shi
+Author: Clarity, kok3shidoll, Mineek
+Section: Development
+Depends: firmware (>= 15.0), cy+cpu.arm64, libcurl4, libssl3, usbmuxd
+Filename: debs/turdusmerula_v1.1_iphoneos-arm64.deb
+Size: 1629256
+SHA256: 2d2bcd31c761fa1d4145252acf86e2d0476b1798bb2b785dff286d346ed361a3
+

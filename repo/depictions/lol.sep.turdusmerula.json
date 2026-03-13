@@ -1,0 +1,16 @@
+{
+  "id": "lol.sep.turdusmerula",
+  "name": "turdus merula",
+  "version": "1.1",
+  "author": "dkxuanye",
+  "subtitle": "USB and development utility",
+  "description": "meow",
+  "depiction": "https://dkxuanye.github.io/repo/depictions/lol.sep.turdusmerula.json",
+  "changelog": [
+    "Initial repository bootstrap release."
+  ],
+  "screenshots": [],
+  "supportUrl": "https://github.com/dkxuanye",
+  "sourceUrl": "https://github.com/dkxuanye",
+  "architecture": "iphoneos-arm64"
+}

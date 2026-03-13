@@ -1,0 +1,11 @@
+Origin: dkxuanye repo
+Label: dkxuanye repo
+Suite: stable
+Version: 1.0
+Architectures: iphoneos-arm iphoneos-arm64
+Components: main
+Description: Personal jailbreak repository for dkxuanye
+Date: Fri, 13 Mar 2026 13:18:31 GMT
+SHA256:
+ bd4f6c114f261a1bd74d62938ff5315c5ed6320cd46edbe46bedec83021ed83c 952 Packages
+ 5b3c326333f59c2ecfa0e0af16a9dcd48f5ec13885bdfd040fad1c097c098abd 414 Packages.gz
