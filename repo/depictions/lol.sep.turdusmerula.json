@@ -62,7 +62,11 @@
       "views": [
         {
           "class": "DepictionSubheaderView",
-          "title": "Initial repository bootstrap release."
+          "title": "1.1"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- 提高 A9（X）设备漏洞利用的成功率\n- 更新 `sep_block` 版本，并修复对 iOS 18.4 及更高版本的支持\n- 修复 A9X 设备的 `sigcheck` 补丁\n- 为 iOS 12.0-14.8(.1) 非官方场景新增 `checkra1n` 模式，并改进 `sigcheck` 补丁流程"
         }
       ]
     }
