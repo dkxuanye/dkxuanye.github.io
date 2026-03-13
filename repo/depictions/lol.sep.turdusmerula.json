@@ -48,6 +48,10 @@
         },
         {
           "class": "DepictionMarkdownView",
+          "markdown": "**使用提示**\n\n- 先确认设备型号、芯片范围与当前环境是否符合预期。\n- 操作前请先备份重要数据。\n- 不要在未明确设备状态、系统条件和操作目标前盲目执行降级或刷写操作。"
+        },
+        {
+          "class": "DepictionMarkdownView",
           "markdown": "**标签**\n\nA9 · A10 · 自由降级"
         }
       ]
