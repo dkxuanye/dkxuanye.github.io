@@ -1,0 +1,64 @@
+{
+  "id": "ipwnderlite",
+  "name": "iPwnder Lite (Rootless)",
+  "author": "sakuRdev/dora2ios",
+  "version": "1.0.71",
+  "class": "DepictionTabView",
+  "minVersion": "0.4",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "Overview",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "iPwnder Lite (Rootless)",
+          "subtitle": "sakuRdev/dora2ios · 1.0.71",
+          "icon": "https://dkxuanye.github.io/repo/assets/ipwnderlite-icon.png"
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "rootless low-level pwning utility for supported devices"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "iPwnder Lite (Rootless) 是一个面向 supported iPhoneOS environments 的 low-level tool，适用于特定设备场景下的 pwning / bootrom workflow。它不是日常应用，使用前应先确认设备状态、连接路径与操作目标。"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**适合人群**\n\n适合已经了解 low-level restore、bootrom、设备连接流程与风险边界的用户，不适合把它当作一键式工具的场景。"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**风险提示**\n\n错误的设备判断、固件假设或操作顺序都可能带来失败、卡住流程，甚至让后续恢复更复杂。Do not use it unless you understand the exact workflow you are trying to run."
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**兼容说明**\n\n**支持范围**\n\n上游 `ipwnderlite` 当前依赖 `firmware (>= 15.0)`、`curl` 与 `com.ra9stuff.accessoryalertblocker`。实际可用性仍取决于 device model、firmware state 与操作链路。\n\n**使用条件**\n\n需要合适的 rootless 环境与明确的 low-level workflow 目标。本源仅镜像主包与 `AccessoryAlertBlocker`，不承诺托管全部传递依赖。"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**使用提示**\n\n- 先确认设备、系统范围与目标流程是否真的需要 iPwnder Lite (Rootless)。\n- 确认 `curl` 与 `com.ra9stuff.accessoryalertblocker` 等依赖已经可用。\n- 在动手前先明确每一步要做什么，不要在未知状态下直接执行命令。"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**标签**\n\nrootless · bootrom · pwning · arm64"
+        }
+      ]
+    },
+    {
+      "class": "DepictionStackView",
+      "tabname": "Changelog",
+      "views": [
+        {
+          "class": "DepictionSubheaderView",
+          "title": "1.0.71"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- Initial mirror release in 玄烨品果源。\n- Switched to local icon and local depiction pages hosted from this repository。\n- Kept the upstream dependency on `com.ra9stuff.accessoryalertblocker` visible in the local presentation。"
+        }
+      ]
+    }
+  ]
+}

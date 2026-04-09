@@ -1,3 +1,35 @@
+Package: com.ra9stuff.accessoryalertblocker
+Name: AccessoryAlertBlocker
+Version: 0.0.1-2
+Architecture: iphoneos-arm64
+Description: blocks downloading accessory firmware alert.
+Depiction: https://dkxuanye.github.io/repo/depictions/com.ra9stuff.accessoryalertblocker-0.0.1-2.html
+SileoDepiction: https://dkxuanye.github.io/repo/depictions/com.ra9stuff.accessoryalertblocker-0.0.1-2.json
+Icon: https://dkxuanye.github.io/repo/assets/accessoryalertblocker-icon.png
+Maintainer: rA9stuff
+Author: rA9stuff
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.ra9stuff.accessoryalertblocker_0.0.1-2_iphoneos-arm64.deb
+Size: 4970
+SHA256: a38c9303115330e1abc471bc21136622c532255c4a1a35dfd82143255a656760
+
+Package: ipwnderlite
+Name: iPwnder Lite (Rootless)
+Version: 1.0.71
+Architecture: iphoneos-arm64
+Description: iPwnder Lite for iPhoneOS.
+Depiction: https://dkxuanye.github.io/repo/depictions/ipwnderlite-1.0.71.html
+SileoDepiction: https://dkxuanye.github.io/repo/depictions/ipwnderlite-1.0.71.json
+Icon: https://dkxuanye.github.io/repo/assets/ipwnderlite-icon.png
+Maintainer: sakuRdev/dora2ios
+Author: sakuRdev/dora2ios
+Section: System
+Depends: firmware (>= 15.0), curl, com.ra9stuff.accessoryalertblocker
+Filename: debs/ipwnderlite_1.0.71_iphoneos-arm64.deb
+Size: 19044
+SHA256: bd9ca18f9dda1f83bf21de343f9672ce96480733f35caa9c9f16035972974037
+
 Package: lol.sep.turdusmerula
 Name: turdus merula
 Version: 1.1

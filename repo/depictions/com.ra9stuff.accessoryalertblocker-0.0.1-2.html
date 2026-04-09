@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AccessoryAlertBlocker</title>
+    <style>
+      :root { color-scheme: light; }
+      body {
+        margin: 0;
+        padding: 24px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #f6f3ec;
+        color: #1f1d18;
+      }
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        background: rgba(255,255,255,0.88);
+        border: 1px solid rgba(31,29,24,0.08);
+        border-radius: 20px;
+        padding: 28px;
+      }
+      h1 { margin-bottom: 8px; }
+      .subtitle { color: #8b4a2c; font-weight: 600; }
+      .section { margin-top: 24px; }
+      .tags { color: #6a655c; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div style="display:flex;align-items:center;gap:16px;">
+        <img src="https://dkxuanye.github.io/repo/assets/accessoryalertblocker-icon.png" alt="AccessoryAlertBlocker icon" style="width:68px;height:68px;border-radius:18px;border:1px solid rgba(31,29,24,0.08);object-fit:cover;" />
+        <div>
+          <h1>AccessoryAlertBlocker</h1>
+          <p class="subtitle">supporting dependency package for alert-free low-level workflows</p>
+        </div>
+      </div>
+      
+      <p>AccessoryAlertBlocker 用于屏蔽 accessory firmware alert，是 `iPwnder Lite (Rootless)` 这类 low-level workflow 常见的 supporting package 之一。它本身很轻量，但并不会自动让不受支持的流程变得安全。</p>
+      <div class="section">
+        <h2>适合人群</h2>
+        <p>适合明确知道自己为什么需要这个 helper package 的用户，尤其是需要配合 `iPwnder Lite (Rootless)` 的场景。</p>
+      </div>
+      <div class="section">
+        <h2>风险提示</h2>
+        <p>屏蔽提示不等于设备状态正确，也不等于流程本身安全。If the surrounding workflow is wrong, removing an alert will not fix that.</p>
+      </div>
+      <div class="section">
+        <h2>兼容说明</h2>
+        <p><strong>支持范围：</strong>当前镜像版本保留上游 `mobilesubstrate (>= 0.9.5000)` 依赖字段。</p>
+        <p><strong>使用条件：</strong>这是 supporting package，不应被理解为完整环境配置的替代品；其余标准依赖仍应来自用户现有的软件源组合。</p>
+      </div>
+      <div class="section">
+        <h2>使用提示</h2>
+        <ul><li>只在目标流程确实需要它时再安装。</li><li>把它视为 helper package，而不是独立解决方案。</li><li>如果你不确定为什么需要屏蔽 accessory alert，先确认上层工具链。</li></ul>
+      </div>
+      <div class="section">
+        <h2>标签</h2>
+        <p class="tags">dependency / helper / alert-blocker</p>
+      </div>
+      <div class="section">
+        <h2>更新记录</h2>
+        <ul><li><strong>0.0.1-2</strong><ul><li>Initial mirror release in 玄烨品果源。</li><li>Added local icon and local depiction content for the dependency package.</li></ul></li></ul>
+      </div>
+      <div class="section">
+        <h2>支持</h2>
+        <p><a href="https://lukezgd.github.io/repo/">https://lukezgd.github.io/repo/</a></p>
+      </div>
+    </main>
+  </body>
+</html>

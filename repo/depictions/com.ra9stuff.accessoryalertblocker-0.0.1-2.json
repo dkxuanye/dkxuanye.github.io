@@ -1,0 +1,64 @@
+{
+  "id": "com.ra9stuff.accessoryalertblocker",
+  "name": "AccessoryAlertBlocker",
+  "author": "rA9stuff",
+  "version": "0.0.1-2",
+  "class": "DepictionTabView",
+  "minVersion": "0.4",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "Overview",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "AccessoryAlertBlocker",
+          "subtitle": "rA9stuff · 0.0.1-2",
+          "icon": "https://dkxuanye.github.io/repo/assets/accessoryalertblocker-icon.png"
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "supporting dependency package for alert-free low-level workflows"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "AccessoryAlertBlocker 用于屏蔽 accessory firmware alert，是 `iPwnder Lite (Rootless)` 这类 low-level workflow 常见的 supporting package 之一。它本身很轻量，但并不会自动让不受支持的流程变得安全。"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**适合人群**\n\n适合明确知道自己为什么需要这个 helper package 的用户，尤其是需要配合 `iPwnder Lite (Rootless)` 的场景。"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**风险提示**\n\n屏蔽提示不等于设备状态正确，也不等于流程本身安全。If the surrounding workflow is wrong, removing an alert will not fix that."
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**兼容说明**\n\n**支持范围**\n\n当前镜像版本保留上游 `mobilesubstrate (>= 0.9.5000)` 依赖字段。\n\n**使用条件**\n\n这是 supporting package，不应被理解为完整环境配置的替代品；其余标准依赖仍应来自用户现有的软件源组合。"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**使用提示**\n\n- 只在目标流程确实需要它时再安装。\n- 把它视为 helper package，而不是独立解决方案。\n- 如果你不确定为什么需要屏蔽 accessory alert，先确认上层工具链。"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**标签**\n\ndependency · helper · alert-blocker"
+        }
+      ]
+    },
+    {
+      "class": "DepictionStackView",
+      "tabname": "Changelog",
+      "views": [
+        {
+          "class": "DepictionSubheaderView",
+          "title": "0.0.1-2"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- Initial mirror release in 玄烨品果源。\n- Added local icon and local depiction content for the dependency package."
+        }
+      ]
+    }
+  ]
+}

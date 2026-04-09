@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>iPwnder Lite (Rootless)</title>
+    <style>
+      :root { color-scheme: light; }
+      body {
+        margin: 0;
+        padding: 24px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #f6f3ec;
+        color: #1f1d18;
+      }
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        background: rgba(255,255,255,0.88);
+        border: 1px solid rgba(31,29,24,0.08);
+        border-radius: 20px;
+        padding: 28px;
+      }
+      h1 { margin-bottom: 8px; }
+      .subtitle { color: #8b4a2c; font-weight: 600; }
+      .section { margin-top: 24px; }
+      .tags { color: #6a655c; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div style="display:flex;align-items:center;gap:16px;">
+        <img src="https://dkxuanye.github.io/repo/assets/ipwnderlite-icon.png" alt="iPwnder Lite (Rootless) icon" style="width:68px;height:68px;border-radius:18px;border:1px solid rgba(31,29,24,0.08);object-fit:cover;" />
+        <div>
+          <h1>iPwnder Lite (Rootless)</h1>
+          <p class="subtitle">rootless low-level pwning utility for supported devices</p>
+        </div>
+      </div>
+      
+      <p>iPwnder Lite (Rootless) 是一个面向 supported iPhoneOS environments 的 low-level tool，适用于特定设备场景下的 pwning / bootrom workflow。它不是日常应用，使用前应先确认设备状态、连接路径与操作目标。</p>
+      <div class="section">
+        <h2>适合人群</h2>
+        <p>适合已经了解 low-level restore、bootrom、设备连接流程与风险边界的用户，不适合把它当作一键式工具的场景。</p>
+      </div>
+      <div class="section">
+        <h2>风险提示</h2>
+        <p>错误的设备判断、固件假设或操作顺序都可能带来失败、卡住流程，甚至让后续恢复更复杂。Do not use it unless you understand the exact workflow you are trying to run.</p>
+      </div>
+      <div class="section">
+        <h2>兼容说明</h2>
+        <p><strong>支持范围：</strong>上游 `ipwnderlite` 当前依赖 `firmware (>= 15.0)`、`curl` 与 `com.ra9stuff.accessoryalertblocker`。实际可用性仍取决于 device model、firmware state 与操作链路。</p>
+        <p><strong>使用条件：</strong>需要合适的 rootless 环境与明确的 low-level workflow 目标。本源仅镜像主包与 `AccessoryAlertBlocker`，不承诺托管全部传递依赖。</p>
+      </div>
+      <div class="section">
+        <h2>使用提示</h2>
+        <ul><li>先确认设备、系统范围与目标流程是否真的需要 iPwnder Lite (Rootless)。</li><li>确认 `curl` 与 `com.ra9stuff.accessoryalertblocker` 等依赖已经可用。</li><li>在动手前先明确每一步要做什么，不要在未知状态下直接执行命令。</li></ul>
+      </div>
+      <div class="section">
+        <h2>标签</h2>
+        <p class="tags">rootless / bootrom / pwning / arm64</p>
+      </div>
+      <div class="section">
+        <h2>更新记录</h2>
+        <ul><li><strong>1.0.71</strong><ul><li>Initial mirror release in 玄烨品果源。</li><li>Switched to local icon and local depiction pages hosted from this repository。</li><li>Kept the upstream dependency on `com.ra9stuff.accessoryalertblocker` visible in the local presentation。</li></ul></li></ul>
+      </div>
+      <div class="section">
+        <h2>支持</h2>
+        <p><a href="https://github.com/dora2ios/ipwnder_lite">https://github.com/dora2ios/ipwnder_lite</a></p>
+      </div>
+    </main>
+  </body>
+</html>
