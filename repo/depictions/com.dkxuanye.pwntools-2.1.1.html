@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PwnTools</title>
+    <style>
+      :root { color-scheme: light; }
+      body {
+        margin: 0;
+        padding: 24px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #f6f3ec;
+        color: #1f1d18;
+      }
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        background: rgba(255,255,255,0.88);
+        border: 1px solid rgba(31,29,24,0.08);
+        border-radius: 20px;
+        padding: 28px;
+      }
+      h1 { margin-bottom: 8px; }
+      .subtitle { color: #8b4a2c; font-weight: 600; }
+      .section { margin-top: 24px; }
+      .tags { color: #6a655c; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div style="display:flex;align-items:center;gap:16px;">
+        <img src="https://dkxuanye.github.io/repo/assets/pwntools-icon.png" alt="PwnTools icon" style="width:68px;height:68px;border-radius:18px;border:1px solid rgba(31,29,24,0.08);object-fit:cover;" />
+        <div>
+          <h1>PwnTools</h1>
+          <p class="subtitle">实时输出日志的 iPwnder 执行工具</p>
+        </div>
+      </div>
+      
+      <p>PwnTools 用于执行 iPwnder，并输出实时日志，便于在低层设备流程中观察执行状态与结果。</p>
+      <div class="section">
+        <h2>适合人群</h2>
+        <p>适合已经了解 iPwnder、设备连接流程与低层操作风险边界的用户。</p>
+      </div>
+      <div class="section">
+        <h2>风险提示</h2>
+        <p>实时日志只会让状态更可见，不会降低底层操作本身的风险。开始前先确认设备、固件和目标流程。</p>
+      </div>
+      <div class="section">
+        <h2>兼容说明</h2>
+        <p><strong>支持范围：</strong>当前包依赖 `firmware (>= 15.0)`。</p>
+        <p><strong>使用条件：</strong>实际可用性仍取决于设备型号、当前系统状态，以及完整的工具链环境。</p>
+      </div>
+      <div class="section">
+        <h2>使用提示</h2>
+        <ul><li>先确认这次流程确实需要执行 iPwnder。</li><li>开始前确认设备连接和依赖环境已经就绪。</li><li>根据实时日志判断流程状态，不要在未知状态下连续重试。</li></ul>
+      </div>
+      <div class="section">
+        <h2>标签</h2>
+        <p class="tags">ipwnder / utilities / arm64</p>
+      </div>
+      <div class="section">
+        <h2>更新记录</h2>
+        <ul><li><strong>2.1.1</strong><ul><li>Initial release in 玄烨品果源。</li><li>Added local icon and locally hosted depiction pages.</li></ul></li></ul>
+      </div>
+      <div class="section">
+        <h2>支持</h2>
+        <p><a href="https://github.com/dkxuanye">https://github.com/dkxuanye</a></p>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,3 +1,19 @@
+Package: com.dkxuanye.pwntools
+Name: PwnTools
+Version: 2.1.1
+Architecture: iphoneos-arm64
+Description: Execute ipwnder with real-time log output
+Depiction: https://dkxuanye.github.io/repo/depictions/com.dkxuanye.pwntools-2.1.1.html
+SileoDepiction: https://dkxuanye.github.io/repo/depictions/com.dkxuanye.pwntools-2.1.1.json
+Icon: https://dkxuanye.github.io/repo/assets/pwntools-icon.png
+Maintainer: dkxuanye
+Author: dkxuanye
+Section: Utilities
+Depends: firmware (>= 15.0)
+Filename: debs/com.dkxuanye.pwntools_2.1.1_iphoneos-arm64.deb
+Size: 2003414
+SHA256: 247ccfa1c0d4ad9d71f7334fea09aa4fe791e3089c6fb1210277932166c409db
+
 Package: com.ra9stuff.accessoryalertblocker
 Name: AccessoryAlertBlocker
 Version: 0.0.1-2
