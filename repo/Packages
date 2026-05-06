@@ -11,8 +11,8 @@ Author: dkxuanye
 Section: Utilities
 Depends: firmware (>= 15.0)
 Filename: debs/com.dkxuanye.pwntools_2.1.1_iphoneos-arm64.deb
-Size: 2003414
-SHA256: 247ccfa1c0d4ad9d71f7334fea09aa4fe791e3089c6fb1210277932166c409db
+Size: 2003548
+SHA256: ab34b6c1772c1135ec3b794f23427d75619e90f1e61f2d4b2d650c9984203493
 
 Package: com.ra9stuff.accessoryalertblocker
 Name: AccessoryAlertBlocker
