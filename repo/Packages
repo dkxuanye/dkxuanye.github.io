@@ -1,3 +1,18 @@
+Package: com.dkxuanye.bindfs
+Name: MiniBindFS
+Version: 0.1.0
+Architecture: iphoneos-arm64e
+Description: bindfs mount CLI tool for Relaxin/roothide (iOS 15+, arm64e)
+Depiction: https://dkxuanye.github.io/repo/depictions/com.dkxuanye.bindfs-0.1.0.html
+SileoDepiction: https://dkxuanye.github.io/repo/depictions/com.dkxuanye.bindfs-0.1.0.json
+Maintainer: dkxuanye
+Author: dkxuanye
+Section: Terminal_Support
+Depends: coreutils, sed, plutil, firmware (>= 15.0)
+Filename: debs/com.dkxuanye.bindfs_0.1.0_iphoneos-arm64e.deb
+Size: 10968
+SHA256: 9848892a1f6179499bbbd85c985604abb228802ef1dd403e7e134e40faca0835
+
 Package: com.dkxuanye.pwntools
 Name: PwnTools
 Version: 2.1.1

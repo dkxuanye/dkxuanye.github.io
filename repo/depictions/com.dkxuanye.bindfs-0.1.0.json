@@ -1,0 +1,64 @@
+{
+  "id": "com.dkxuanye.bindfs",
+  "name": "MiniBindFS",
+  "author": "dkxuanye",
+  "version": "0.1.0",
+  "class": "DepictionTabView",
+  "minVersion": "0.4",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "Overview",
+      "views": [
+        {
+          "class": "DepictionHeaderView",
+          "title": "MiniBindFS",
+          "subtitle": "dkxuanye · 0.1.0",
+          "icon": ""
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "bindfs 文件夹绑定挂载 CLI,支持开机自动重挂"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "MiniBindFS 将系统只读目录(如 /System/Library/Fonts)复制到越狱根可写区后,用 XNU 内核 bindfs 只读绑定挂载回原路径,实现「改写只读系统目录」。支持开机自动重挂、动态 jbroot 探测、最小 entitlements 与多层安全守卫。"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**适合人群**\n\n面向 Relaxin/roothide 系 arm64e 越狱用户,需要修改系统字体等只读目录的场景。"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**风险提示**\n\n插件以 root 权限运行并短暂借用内核凭证;MNT_FORCE 强制卸载被系统进程占用的目录(如字体目录)实测可致字体显示不全、严重时触发越狱安全模式。请勿直接卸载系统占用目录,恢复原始字体请使用「清空配置 + 重启用户空间」方式。挂载本身为只读,不会写入系统。"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**兼容说明**\n\n**支持范围**\n\n已验证:Relaxin 越狱 iOS 17.0-17.3.1,arm64e(iPhone 13 Pro Max 实测)。包架构 iphoneos-arm64e,依赖 firmware (>= 15.0)。\n\n**使用条件**\n\n设备需安装 plutil(apt install plutil);Dopamine 系与 checkm8 roothide 不可安装此包(架构与 vroot 语义差异)。"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**使用提示**\n\n- 挂载:mount_bindfs /System/Library/Fonts(首次会全量复制目录)。\n- 开机自动挂载:mount_bindfs -s /System/Library/Fonts;查看 mount_bindfs -l。\n- 改字体:用 Filza 编辑 /var/jb/bindfs/System/Library/Fonts 副本,即时生效。\n- 恢复原始字体:先 mount_bindfs -s 清空配置,再 launchctl reboot userspace;切勿直接卸载系统占用目录。"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "**标签**\n\nbindfs · mount · terminal · font · arm64e"
+        }
+      ]
+    },
+    {
+      "class": "DepictionStackView",
+      "tabname": "Changelog",
+      "views": [
+        {
+          "class": "DepictionSubheaderView",
+          "title": "0.1.0"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- Initial release in 玄烨品果源。\n- 真机全链路验证通过:挂载/卸载/开机自动挂载/失败路径。\n- 三轮安全审查修复:打包权限 0:0、配置 root:wheel/0600 fail-closed、挂载根白名单、canon_path 防死循环、临时文件 mktemp、LICENSE 入包、发布校验脚本。\n- 安全卸载最佳实践:MNT_FORCE 卸载系统占用目录的实测风险已在文档与风险提示中说明。"
+        }
+      ]
+    }
+  ]
+}
