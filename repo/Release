@@ -5,7 +5,7 @@ Version: 1.0
 Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: 玄烨个人维护的越狱软件源
-Date: Wed, 12 Aug 2026 11:34:42 GMT
+Date: Wed, 12 Aug 2026 13:59:03 GMT
 SHA256:
  600c879c450641b4d821a83cfbf969095520adeef84a81d44838dba93e6c5c9c 5093 Packages
  767923415abac9f9966cd4c019dd0bd05863b458d0e65c58e529d6a92a56f6a1 1263 Packages.gz

@@ -33,35 +33,35 @@
         
         <div>
           <h1>MiniBindFS</h1>
-          <p class="subtitle">bindfs 文件夹绑定挂载 CLI,支持 Relaxin 与 Dopamine 3.0</p>
+          <p class="subtitle">越狱后修改系统字体和资源</p>
         </div>
       </div>
       
-      <p>MiniBindFS 将系统只读目录(如 /System/Library/Fonts)复制到越狱根可写区后,用 XNU 内核 bindfs 只读绑定挂载回原路径,实现「改写只读系统目录」。支持开机自动重挂、双架构变体、最小 entitlements 与多层安全守卫。</p>
+      <p>MiniBindFS 会先复制一份系统目录,再把副本挂回原位置。这样可以修改系统字体或其他资源,而不直接覆盖原始文件。</p>
       <div class="section">
         <h2>适合人群</h2>
-        <p>面向熟悉越狱环境与 root 操作的 Relaxin arm64e、Dopamine 3.0 arm64 用户,需要修改系统字体等只读目录的场景。</p>
+        <p>适合已经完成越狱,想修改系统字体或测试系统资源的用户。</p>
       </div>
       <div class="section">
         <h2>风险提示</h2>
-        <p>插件以 root 权限运行并短暂借用内核凭证。工具不再对 EBUSY 自动执行 MNT_FORCE 强制卸载;系统占用目录卸载可能失败,请勿直接卸载字体等关键目录。恢复原始状态请先执行「mount_bindfs -s」清空配置,再整机重启;用户空间重启不会清除内核 bindfs 挂载。挂载点为只读,但误配置仍可能影响系统进程。</p>
+        <p>这是 Root 工具,使用前请先备份。不要直接操作整个系统目录,也不要强制卸载字体等关键目录。出现异常时,先执行 mount_bindfs -s,再完整重启设备。</p>
       </div>
       <div class="section">
         <h2>兼容说明</h2>
-        <p><strong>支持范围：</strong>发布两个独立变体:iphoneos-arm64e 面向 Relaxin;iphoneos-arm64 面向 Dopamine 3.0。Dopamine 3.0 / iOS 17.0 / iPhone 13 Pro Max 已实测;Relaxin 版 0.1.2 安全修复后尚未重新真机重测。</p>
-        <p><strong>使用条件：</strong>设备需安装 plutil(apt install plutil),以 root 执行。真 roothide(RootHide 随机 jbroot、无 /var/jb)与 rootful 越狱未验证,不声称支持。</p>
+        <p><strong>支持范围：</strong>Dopamine 3.0 / iOS 17.0 已在 iPhone 13 Pro Max 上测试。Relaxin 安装包已提供,但 0.1.2 修复后还没有完成新一轮真机回归。RootHide/roothide 和 rootful 越狱未验证。</p>
+        <p><strong>使用条件：</strong>从个人源安装即可。如果提示缺少 plutil,在终端执行 apt update && apt install plutil。</p>
       </div>
       <div class="section">
         <h2>使用提示</h2>
-        <ul><li>挂载:mount_bindfs /System/Library/Fonts(首次会全量复制目录)。</li><li>开机自动挂载:mount_bindfs -s /System/Library/Fonts;查看 mount_bindfs -l。</li><li>改字体:用 Filza 编辑 /var/jb/bindfs/System/Library/Fonts 副本,即时生效。</li><li>恢复原始字体:先 mount_bindfs -s 清空配置,再整机重启;launchctl reboot userspace 不会清除内核挂载。</li><li>请按越狱环境选择对应架构 deb,不要在未验证环境混用两个变体。</li></ul>
+        <ul><li>首次挂载:mount_bindfs /System/Library/Fonts。</li><li>改字体:用 Filza 编辑 bindfs 副本,不要直接修改原路径。</li><li>自动挂载:mount_bindfs -s /System/Library/Fonts;查看设置用 mount_bindfs -l。</li><li>恢复原始状态:先 mount_bindfs -s,再完整重启设备。</li></ul>
       </div>
       <div class="section">
         <h2>标签</h2>
-        <p class="tags">bindfs / mount / terminal / font / Dopamine / Relaxin / arm64 / arm64e</p>
+        <p class="tags">bindfs / mount / terminal / font / Dopamine / Relaxin / arm64 / 字体</p>
       </div>
       <div class="section">
         <h2>更新记录</h2>
-        <ul><li><strong>0.1.2</strong><ul><li>新增 Dopamine 3.0 rootless / iphoneos-arm64 独立变体;Relaxin / iphoneos-arm64e 变体继续独立维护。</li><li>移除 EBUSY 时的 MNT_FORCE 自动卸载;维护脚本遇活跃或未知 bindfs 挂载会安全中止。</li><li>加固配置 root:wheel/0600 可信边界、plist 最终校验与原子替换。</li><li>双版本双 shell 回归各 113 项通过,并完成双架构 deb 权限、成员、字节一致性和凭据扫描。</li></ul></li><li><strong>0.1.0</strong><ul><li>Initial release in 玄烨品果源。</li><li>真机全链路验证通过:挂载/卸载/开机自动挂载/失败路径。</li><li>三轮安全审查修复:打包权限 0:0、配置 root:wheel/0600 fail-closed、挂载根白名单、canon_path 防死循环、临时文件 mktemp、LICENSE 入包、发布校验脚本。</li><li>安全卸载最佳实践已记录系统占用目录的风险。</li></ul></li></ul>
+        <ul><li><strong>0.1.2</strong><ul><li>新增 Dopamine 3.0 支持。</li><li>改进卸载安全,遇到系统占用时不强制处理。</li></ul></li><li><strong>0.1.0</strong><ul><li>MiniBindFS 首次发布。</li><li>支持目录挂载、字体副本修改和开机自动挂载。</li></ul></li></ul>
       </div>
       <div class="section">
         <h2>支持</h2>
