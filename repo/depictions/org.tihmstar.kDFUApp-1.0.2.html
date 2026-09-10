@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>kDFUApp</title>
+    <style>
+      :root { color-scheme: light; }
+      body {
+        margin: 0;
+        padding: 24px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #f6f3ec;
+        color: #1f1d18;
+      }
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        background: rgba(255,255,255,0.88);
+        border: 1px solid rgba(31,29,24,0.08);
+        border-radius: 20px;
+        padding: 28px;
+      }
+      h1 { margin-bottom: 8px; }
+      .subtitle { color: #8b4a2c; font-weight: 600; }
+      .section { margin-top: 24px; }
+      .tags { color: #6a655c; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div style="display:flex;align-items:center;gap:16px;">
+        
+        <div>
+          <h1>kDFUApp</h1>
+          <p class="subtitle">在受支持的 32 位设备上一键进入 kDFU 模式</p>
+        </div>
+      </div>
+      
+      <p>kDFUApp 提供了一种简单的方式进入 kDFU 模式：打开需要的开关后按下按钮即可。它主要面向仍在使用 32 位 A5/A6 等老设备、并需要 kDFU 流程的用户。</p>
+      <div class="section">
+        <h2>适合人群</h2>
+        <p>适合明确知道自己为什么需要 kDFU 模式，并了解旧设备固件与刷写流程的用户。</p>
+      </div>
+      <div class="section">
+        <h2>风险提示</h2>
+        <p>kDFU 属于低层刷写流程，错误的设备判断或操作顺序可能导致流程失败甚至设备无法正常启动。NOT COMPATIBLE WITH 64BIT DEVICES！不要在 64 位设备上使用本包。</p>
+      </div>
+      <div class="section">
+        <h2>兼容说明</h2>
+        <p><strong>支持范围：</strong>当前包依赖 `openssl`、`libcrippy-1.0.0`、`libpartialzip-1.0.0`、`curl`、`kloader` 与 `firmware (>= 6.0)`。上游声明兼容 iPhone3,1 / iPhone3,2 / iPhone3,3 / iPhone4,1 / iPhone5,1 / iPhone5,2 / iPhone5,4、iPad2,1 / iPad2,2 / iPad2,3 / iPad3,1 / iPad3,3。</p>
+        <p><strong>使用条件：</strong>仅支持 32 位设备，不支持任何 64 位设备。本源仅镜像主包，`libcrippy`、`libpartialzip`、`kloader` 等传递依赖需要由用户现有的软件源提供。</p>
+      </div>
+      <div class="section">
+        <h2>使用提示</h2>
+        <ul><li>先确认设备型号在支持列表内，且不属于任何 64 位设备。</li><li>确认 `openssl`、`libcrippy-1.0.0`、`libpartialzip-1.0.0`、`curl`、`kloader` 等依赖已经可用。</li><li>按需打开开关后再按下按钮进入 kDFU，不要在未知状态下反复尝试。</li></ul>
+      </div>
+      <div class="section">
+        <h2>标签</h2>
+        <p class="tags">kdfu / dfu / 32-bit / restore</p>
+      </div>
+      <div class="section">
+        <h2>更新记录</h2>
+        <ul><li><strong>1.0.2</strong><ul><li>Initial mirror release in 玄烨品果源。</li><li>Kept the upstream dependency set visible in the local presentation。</li><li>Added locally hosted depiction pages.</li></ul></li></ul>
+      </div>
+      <div class="section">
+        <h2>支持</h2>
+        <p><a href="https://github.com/tihmstar">https://github.com/tihmstar</a></p>
+      </div>
+    </main>
+  </body>
+</html>
