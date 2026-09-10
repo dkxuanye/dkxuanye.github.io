@@ -18,11 +18,11 @@
         },
         {
           "class": "DepictionSubheaderView",
-          "title": "在受支持的 32 位设备上一键进入 kDFU 模式"
+          "title": "rootful 环境下在受支持的 32 位设备上一键进入 kDFU 模式"
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "kDFUApp 提供了一种简单的方式进入 kDFU 模式：打开需要的开关后按下按钮即可。它主要面向仍在使用 32 位 A5/A6 等老设备、并需要 kDFU 流程的用户。"
+          "markdown": "kDFUApp 提供了一种简单的方式进入 kDFU 模式：打开需要的开关后按下按钮即可。它主要面向仍在使用 32 位 A5/A6 等老设备、并需要 kDFU 流程的用户。这是一个 rootful 包，不适用于 rootless 或 RootHide 越狱环境。"
         },
         {
           "class": "DepictionMarkdownView",
@@ -34,15 +34,15 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**兼容说明**\n\n**支持范围**\n\n当前包依赖 `openssl`、`libcrippy-1.0.0`、`libpartialzip-1.0.0`、`curl`、`kloader` 与 `firmware (>= 6.0)`。上游声明兼容 iPhone3,1 / iPhone3,2 / iPhone3,3 / iPhone4,1 / iPhone5,1 / iPhone5,2 / iPhone5,4、iPad2,1 / iPad2,2 / iPad2,3 / iPad3,1 / iPad3,3。\n\n**使用条件**\n\n仅支持 32 位设备，不支持任何 64 位设备。本源仅镜像主包，`libcrippy`、`libpartialzip`、`kloader` 等传递依赖需要由用户现有的软件源提供。"
+          "markdown": "**兼容说明**\n\n**支持范围**\n\n当前包依赖 `openssl`、`libcrippy-1.0.0`、`libpartialzip-1.0.0`、`curl`、`kloader` 与 `firmware (>= 6.0)`。上游声明兼容 iPhone3,1 / iPhone3,2 / iPhone3,3 / iPhone4,1 / iPhone5,1 / iPhone5,2 / iPhone5,4、iPad2,1 / iPad2,2 / iPad2,3 / iPad3,1 / iPad3,3。\n\n**使用条件**\n\n本包为 rootful 包，只能在 rootful 越狱环境下使用，不适用于 rootless 或 RootHide。仅支持 32 位设备，不支持任何 64 位设备。本源仅镜像主包，`libcrippy`、`libpartialzip`、`kloader` 等传递依赖需要由用户现有的软件源提供。"
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**使用提示**\n\n- 先确认设备型号在支持列表内，且不属于任何 64 位设备。\n- 确认 `openssl`、`libcrippy-1.0.0`、`libpartialzip-1.0.0`、`curl`、`kloader` 等依赖已经可用。\n- 按需打开开关后再按下按钮进入 kDFU，不要在未知状态下反复尝试。"
+          "markdown": "**使用提示**\n\n- 先确认当前越狱环境是 rootful，而不是 rootless 或 RootHide。\n- 先确认设备型号在支持列表内，且不属于任何 64 位设备。\n- 确认 `openssl`、`libcrippy-1.0.0`、`libpartialzip-1.0.0`、`curl`、`kloader` 等依赖已经可用。\n- 按需打开开关后再按下按钮进入 kDFU，不要在未知状态下反复尝试。"
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**标签**\n\nkdfu · dfu · 32-bit · restore"
+          "markdown": "**标签**\n\nrootful · kdfu · dfu · 32-bit · restore"
         }
       ]
     },

@@ -33,11 +33,11 @@
         
         <div>
           <h1>kDFUApp</h1>
-          <p class="subtitle">在受支持的 32 位设备上一键进入 kDFU 模式</p>
+          <p class="subtitle">rootful 环境下在受支持的 32 位设备上一键进入 kDFU 模式</p>
         </div>
       </div>
       
-      <p>kDFUApp 提供了一种简单的方式进入 kDFU 模式：打开需要的开关后按下按钮即可。它主要面向仍在使用 32 位 A5/A6 等老设备、并需要 kDFU 流程的用户。</p>
+      <p>kDFUApp 提供了一种简单的方式进入 kDFU 模式：打开需要的开关后按下按钮即可。它主要面向仍在使用 32 位 A5/A6 等老设备、并需要 kDFU 流程的用户。这是一个 rootful 包，不适用于 rootless 或 RootHide 越狱环境。</p>
       <div class="section">
         <h2>适合人群</h2>
         <p>适合明确知道自己为什么需要 kDFU 模式，并了解旧设备固件与刷写流程的用户。</p>
@@ -49,15 +49,15 @@
       <div class="section">
         <h2>兼容说明</h2>
         <p><strong>支持范围：</strong>当前包依赖 `openssl`、`libcrippy-1.0.0`、`libpartialzip-1.0.0`、`curl`、`kloader` 与 `firmware (>= 6.0)`。上游声明兼容 iPhone3,1 / iPhone3,2 / iPhone3,3 / iPhone4,1 / iPhone5,1 / iPhone5,2 / iPhone5,4、iPad2,1 / iPad2,2 / iPad2,3 / iPad3,1 / iPad3,3。</p>
-        <p><strong>使用条件：</strong>仅支持 32 位设备，不支持任何 64 位设备。本源仅镜像主包，`libcrippy`、`libpartialzip`、`kloader` 等传递依赖需要由用户现有的软件源提供。</p>
+        <p><strong>使用条件：</strong>本包为 rootful 包，只能在 rootful 越狱环境下使用，不适用于 rootless 或 RootHide。仅支持 32 位设备，不支持任何 64 位设备。本源仅镜像主包，`libcrippy`、`libpartialzip`、`kloader` 等传递依赖需要由用户现有的软件源提供。</p>
       </div>
       <div class="section">
         <h2>使用提示</h2>
-        <ul><li>先确认设备型号在支持列表内，且不属于任何 64 位设备。</li><li>确认 `openssl`、`libcrippy-1.0.0`、`libpartialzip-1.0.0`、`curl`、`kloader` 等依赖已经可用。</li><li>按需打开开关后再按下按钮进入 kDFU，不要在未知状态下反复尝试。</li></ul>
+        <ul><li>先确认当前越狱环境是 rootful，而不是 rootless 或 RootHide。</li><li>先确认设备型号在支持列表内，且不属于任何 64 位设备。</li><li>确认 `openssl`、`libcrippy-1.0.0`、`libpartialzip-1.0.0`、`curl`、`kloader` 等依赖已经可用。</li><li>按需打开开关后再按下按钮进入 kDFU，不要在未知状态下反复尝试。</li></ul>
       </div>
       <div class="section">
         <h2>标签</h2>
-        <p class="tags">kdfu / dfu / 32-bit / restore</p>
+        <p class="tags">rootful / kdfu / dfu / 32-bit / restore</p>
       </div>
       <div class="section">
         <h2>更新记录</h2>
