@@ -48,7 +48,7 @@
       </div>
       <div class="section">
         <h2>兼容说明</h2>
-        <p><strong>支持范围：</strong>Dopamine 3.0 / iOS 17.0 已在 iPhone 13 Pro Max 上完成整机重启和重新越狱测试。Relaxin 安装包已提供,但当前安全修复版还没有完成新一轮真机回归。RootHide/roothide 和 rootful 越狱未验证。</p>
+        <p><strong>支持范围：</strong>Dopamine 3.0 / iOS 17.0(iPhone 13 Pro Max)已验证;RootHide Bootstrap / iOS 17.0 与 iOS 16.0.3(iPhone 13 Pro Max、iPhone 14 Plus)已验证守护与自动挂载;Relaxin 安装包已提供,安全修复版尚未完成新一轮真机回归;rootful 越狱不支持。</p>
         <p><strong>使用条件：</strong>从个人源安装即可。如果提示缺少 plutil,在终端执行 apt update && apt install plutil。</p>
       </div>
       <div class="section">
@@ -61,7 +61,7 @@
       </div>
       <div class="section">
         <h2>更新记录</h2>
-        <ul><li><strong>0.1.3</strong><ul><li>修复 Dopamine 重新越狱后不会自动挂载的问题。</li><li>整机重启并重新越狱后自动挂载已实测通过。</li></ul></li><li><strong>0.1.2</strong><ul><li>新增 Dopamine 3.0 支持。</li><li>改进卸载安全,遇到系统占用时不强制处理。</li></ul></li><li><strong>0.1.0</strong><ul><li>MiniBindFS 首次发布。</li><li>支持目录挂载、字体副本修改和开机自动挂载。</li></ul></li></ul>
+        <ul><li><strong>0.1.4</strong><ul><li>修复 RootHide/roothide 越狱后守护无法启动、开机不自动挂载的问题(wrapper 与守护配置不再依赖 /var/jb 固定路径)。</li><li>iPhone 13 Pro Max(iOS 17.0)与 iPhone 14 Plus(iOS 16.0.3)RootHide 环境实测:开机守护正常、自动挂载恢复、中英文字体替换生效。</li></ul></li><li><strong>0.1.3</strong><ul><li>修复 Dopamine 重新越狱后不会自动挂载的问题。</li><li>整机重启并重新越狱后自动挂载已实测通过。</li></ul></li><li><strong>0.1.2</strong><ul><li>新增 Dopamine 3.0 支持。</li><li>改进卸载安全,遇到系统占用时不强制处理。</li></ul></li><li><strong>0.1.0</strong><ul><li>MiniBindFS 首次发布。</li><li>支持目录挂载、字体副本修改和开机自动挂载。</li></ul></li></ul>
       </div>
       <div class="section">
         <h2>支持</h2>

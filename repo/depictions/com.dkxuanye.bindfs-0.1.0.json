@@ -34,7 +34,7 @@
         },
         {
           "class": "DepictionMarkdownView",
-          "markdown": "**兼容说明**\n\n**支持范围**\n\nDopamine 3.0 / iOS 17.0 已在 iPhone 13 Pro Max 上完成整机重启和重新越狱测试。Relaxin 安装包已提供,但当前安全修复版还没有完成新一轮真机回归。RootHide/roothide 和 rootful 越狱未验证。\n\n**使用条件**\n\n从个人源安装即可。如果提示缺少 plutil,在终端执行 apt update && apt install plutil。"
+          "markdown": "**兼容说明**\n\n**支持范围**\n\nDopamine 3.0 / iOS 17.0(iPhone 13 Pro Max)已验证;RootHide Bootstrap / iOS 17.0 与 iOS 16.0.3(iPhone 13 Pro Max、iPhone 14 Plus)已验证守护与自动挂载;Relaxin 安装包已提供,安全修复版尚未完成新一轮真机回归;rootful 越狱不支持。\n\n**使用条件**\n\n从个人源安装即可。如果提示缺少 plutil,在终端执行 apt update && apt install plutil。"
         },
         {
           "class": "DepictionMarkdownView",
@@ -50,6 +50,14 @@
       "class": "DepictionStackView",
       "tabname": "Changelog",
       "views": [
+        {
+          "class": "DepictionSubheaderView",
+          "title": "0.1.4"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "- 修复 RootHide/roothide 越狱后守护无法启动、开机不自动挂载的问题(wrapper 与守护配置不再依赖 /var/jb 固定路径)。\n- iPhone 13 Pro Max(iOS 17.0)与 iPhone 14 Plus(iOS 16.0.3)RootHide 环境实测:开机守护正常、自动挂载恢复、中英文字体替换生效。"
+        },
         {
           "class": "DepictionSubheaderView",
           "title": "0.1.3"

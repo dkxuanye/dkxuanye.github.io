@@ -1,5 +1,20 @@
 Package: com.dkxuanye.bindfs
 Name: MiniBindFS
+Version: 0.1.4
+Architecture: iphoneos-arm64
+Description: bindfs mount CLI tool for rootless jailbreaks (Relaxin arm64e; Dopamine 3.0 arm64)
+Depiction: https://dkxuanye.github.io/repo/depictions/com.dkxuanye.bindfs-0.1.4.html
+SileoDepiction: https://dkxuanye.github.io/repo/depictions/com.dkxuanye.bindfs-0.1.4.json
+Maintainer: dkxuanye
+Author: dkxuanye
+Section: Terminal_Support
+Depends: coreutils, sed, plutil, firmware (>= 15.0)
+Filename: debs/bindfs_0.1.4_iphoneos-arm64.deb
+Size: 13784
+SHA256: 68e29659afcb75cd5d793eb12c1a3b907bea678d749533fd0e109ac1102f6d0f
+
+Package: com.dkxuanye.bindfs
+Name: MiniBindFS
 Version: 0.1.2
 Architecture: iphoneos-arm64
 Description: bindfs mount CLI tool for rootless jailbreaks (Relaxin arm64e; Dopamine 3.0 arm64)
@@ -27,6 +42,21 @@ Depends: coreutils, sed, plutil, firmware (>= 15.0)
 Filename: debs/com.dkxuanye.bindfs_0.1.3_iphoneos-arm64.deb
 Size: 13772
 SHA256: d802c99d6046d5cded84837f7aa5e3292bfda4e192da3b894255a8626d4f1ef2
+
+Package: com.dkxuanye.bindfs
+Name: MiniBindFS
+Version: 0.1.4
+Architecture: iphoneos-arm64e
+Description: bindfs mount CLI tool for rootless jailbreaks (Relaxin arm64e; Dopamine 3.0 arm64)
+Depiction: https://dkxuanye.github.io/repo/depictions/com.dkxuanye.bindfs-0.1.4.html
+SileoDepiction: https://dkxuanye.github.io/repo/depictions/com.dkxuanye.bindfs-0.1.4.json
+Maintainer: dkxuanye
+Author: dkxuanye
+Section: Terminal_Support
+Depends: coreutils, sed, plutil, firmware (>= 15.0)
+Filename: debs/bindfs_0.1.4_iphoneos-arm64e.deb
+Size: 13748
+SHA256: 55998a88c46aef383b8274f92d260816bc72d712a9a471096351fd2131d45afa
 
 Package: com.dkxuanye.bindfs
 Name: MiniBindFS
